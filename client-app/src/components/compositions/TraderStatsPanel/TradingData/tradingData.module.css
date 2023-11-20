@@ -1,0 +1,202 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-inline: 2rem;
+}
+.topBar {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 0.7rem;
+  color: gray;
+}
+.innerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dataOverview {
+  border: 1px solid #eee;
+  border-radius: 0.5rem;
+  padding: 1rem 0.5rem;
+  position: sticky;
+  top: 1rem;
+}
+.dataOverview .dataBox {
+  padding-inline: 1rem;
+  padding-top: 1rem;
+}
+
+.dataRow {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 1rem;
+  font-size: 0.8rem;
+  color: gray;
+  margin-block: 0.5rem;
+}
+
+.dataRow .value.badge {
+  background-color: #39bd79;
+  color: black;
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 0.25rem;
+}
+
+.dataRow .value.positive {
+  color: #39bd79;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding-inline: 1rem;
+}
+
+.chartContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  overflow-x: hidden;
+}
+
+.roiChart {
+  border: 1px solid #eee;
+  border-radius: 0.5rem;
+  padding: 1rem 1rem 0.5rem 0.5rem;
+  height: 100%;
+  max-height: 700px;
+  overflow-y: hidden;
+}
+.barCharBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.weekly,
+.risk {
+  border: 1px solid #eee;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.topTraded {
+  background-color: cadetblue;
+}
+.btnBox {
+  display: flex;
+  justify-content: space-around;
+  margin-block: 1rem;
+}
+
+.guidBox {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.7rem;
+  padding: 0 1rem 0.5rem;
+  gap: 3rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.profitBadge,
+.lossBadge {
+  position: relative;
+}
+
+.profitBadge::before,
+.lossBadge::before {
+  content: "";
+  position: absolute;
+  top: 25%;
+  inset-inline-start: -1.75rem;
+  height: 0.5rem;
+  width: 1.5rem;
+  background-color: #39bd79;
+}
+
+.lossBadge::before {
+  background-color: rgb(183, 0, 0);
+}
+
+.footer {
+  font-size: 0.7rem;
+  padding: 0 1rem 0.5rem;
+}
+.footerBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footnote {
+  margin-bottom: 0.5rem;
+}
+.day,
+.week,
+.month {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.day .value,
+.week .value,
+.month .value {
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+@media screen and (min-width: 375px) {
+  .innerContainer {
+    align-items: center;
+  }
+  .dataOverview,
+  .chartContainer {
+    max-width: 300px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .innerContainer {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .dataOverview {
+    max-width: 250px;
+  }
+  .chartContainer {
+    max-width: unset;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding-inline: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .barCharBox {
+    flex-direction: row;
+  }
+  .weekly,
+  .risk {
+    flex: 1;
+  }
+  .btnBox {
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .dataOverview {
+    max-width: 300px;
+  }
+}

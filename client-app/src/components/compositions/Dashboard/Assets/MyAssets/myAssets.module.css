@@ -1,0 +1,40 @@
+.container {
+  width: 100%;
+  padding-top: 3rem;
+  padding-inline: 1rem;
+}
+.heading {
+  font-weight: normal;
+  margin-bottom: 1rem;
+}
+
+.tabList {
+  max-width: 180px;
+}
+
+@media screen and (min-width: 375px) {
+  .tabList {
+    max-width: 260px;
+  }
+}
+
+@media screen and (min-width: 578px) {
+  .container {
+    padding-inline: 2rem;
+  }
+  .tabList {
+    max-width: 340px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tabList {
+    max-width: 450px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .tabList {
+    max-width: unset;
+  }
+}

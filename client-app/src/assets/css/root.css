@@ -1,0 +1,64 @@
+:root {
+  --primary: #3853fc;
+  --header-height: 56px;
+  --dashboard-horizontal-height: 4rem;
+  --dashboard-vertical-width: 0;
+}
+
+/* MARKET ROOT CSS VARIABLES */
+
+:root {
+  /* --market-bg-primary: #0b2027; */
+  --market-bg-primary: rgb(19, 23, 34);
+  --market-bg-secondary: #192334;
+  /* --market-bg-secondary: #1f3238; */
+  --market-bg-secondary-light: #2bcbd7;
+  --market-bg-border: #383838;
+  --market-success: #0abf64;
+  --market-error: #fb3f65;
+  --market-text-secondary: #a7a7a7;
+
+  /* SPACING */
+  --market-sidebar-w: 320px;
+  --market-inner-sidebar-w: 260px;
+  --market-header-h: 3rem;
+  --market-heading-h: 3rem;
+  --market-statusbar-h: 2.5rem;
+  /* Dependant Menu Spacing */
+  --market-exchange-menu-h: calc(
+    100% -
+      (
+        var(--market-header-h) + var(--market-heading-h) +
+          var(--market-statusbar-h)
+      )
+  );
+
+  --market-symbol-menu-h: calc(
+    100% -
+      (
+        var(--market-header-h) + (2 * var(--market-heading-h)) +
+          var(--market-statusbar-h)
+      )
+  );
+}
+
+/* MARKET ROOT CSS VARIABLES */
+
+@media screen and (min-width: 576px) {
+  :root {
+    --dashboard-vertical-width: 200px;
+    --dashboard-horizontal-height: 0;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  :root {
+    --header-height: 4rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --dashboard-vertical-width: 250px;
+  }
+}

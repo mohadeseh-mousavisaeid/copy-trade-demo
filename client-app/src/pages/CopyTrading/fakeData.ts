@@ -1,0 +1,65 @@
+import { Trader } from "types/Trader";
+
+export const data: Trader[] = [
+  {
+    id: "1",
+    name: "Bill",
+    description: "Wall Street Wolf!",
+    bio: "Lorem ipsum, dolor sit amet consectetur",
+    imgUrl: "https://i.pravatar.cc/250?img=3",
+    followers: "20,987",
+    nationality: "Iran",
+    joiningDate: "2022/12/24",
+  },
+  {
+    id: "2",
+    name: "Jack",
+    description: "best trader ever",
+    bio: "Lorem ipsum, dolor sit amet consectetur",
+    imgUrl: "https://i.pravatar.cc/250?img=12",
+    followers: "0",
+    nationality: "UK",
+    joiningDate: "2023/10/14",
+  },
+
+  {
+    id: "3",
+    name: "Sarah",
+    description: "...",
+    bio: "Lorem ipsum, dolor sit amet consectetur",
+    imgUrl: "https://i.pravatar.cc/250?img=24",
+    followers: "15,957",
+    nationality: "US",
+    joiningDate: "2019/10/09",
+  },
+  {
+    id: "4",
+    name: "Peter",
+    description: "busy",
+    bio: "Lorem ipsum, dolor sit amet consectetur",
+    imgUrl: "https://i.pravatar.cc/250?img=11",
+    followers: "13,057",
+    nationality: "Spain",
+    joiningDate: "2020/01/06",
+  },
+  {
+    id: "5",
+    name: "Doe",
+    description: "focusing",
+    imgUrl: "https://i.pravatar.cc/250?img=25",
+    followers: "5,057",
+    nationality: "Germany",
+    joiningDate: "2020/11/26",
+  },
+
+  {
+    id: "6",
+    name: "Jess",
+    description: "...",
+    bio: "Lorem ipsum, dolor sit amet consectetur",
+    imgUrl: "https://i.pravatar.cc/250?img=32",
+    followers: "3,057",
+    nationality: "Iran",
+    joiningDate: "2021/12/01",
+  },
+];

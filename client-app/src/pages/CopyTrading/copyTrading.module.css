@@ -1,0 +1,100 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding-bottom: 4rem; */
+}
+.introBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(180deg, #e3f1ff, rgba(227, 241, 255, 0));
+  width: 100%;
+}
+
+.intro {
+  height: 50vh;
+  width: 100%;
+  background-image: url(../../assets/img/bg-rank-top.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  max-width: 1200px;
+}
+
+.heading {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-inline-start: 2rem;
+  padding-top: 4rem;
+}
+.heading h1 {
+  font-size: 1.5rem;
+}
+
+.heading h2 {
+  font-weight: normal;
+  font-size: 1.3rem;
+  margin-block: 1rem;
+}
+.innerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 1000px;
+  width: 100%;
+  margin-inline: auto;
+  margin-bottom: 4rem;
+}
+.statisticNum {
+  color: var(--primary);
+  font-weight: bold;
+}
+
+.toolbar {
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding-inline: 1rem;
+}
+
+.copyRight {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+  color: gray;
+  margin-block: 0.5rem;
+}
+
+@media screen and (min-width: 576px) {
+  .intro {
+    background-size: cover;
+  }
+  .heading h1 {
+    font-size: 2rem;
+  }
+  .heading {
+    justify-content: center;
+    padding-top: 2rem;
+  }
+
+  .toolbar {
+    padding-inline: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .heading h1 {
+    font-size: 3rem;
+  }
+  .heading h2 {
+    font-size: 1.5rem;
+  }
+  .intro {
+    background-size: contain;
+  }
+}

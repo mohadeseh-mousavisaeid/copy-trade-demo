@@ -1,0 +1,21 @@
+.container {
+  width: 100%;
+  position: relative;
+}
+
+.hr {
+  width: 100% !important;
+  background-color: rgb(230, 230, 230);
+  height: 1px;
+}
+.badge {
+  position: absolute;
+  inset-inline-start: 50%;
+  inset-block-start: 50%;
+  transform: translate(-50%, -50%);
+  /* transform: translateY(-50%); */
+  color: lightgray;
+  font-size: 0.8em;
+  background-color: white;
+  padding-inline: 0.5rem;
+}

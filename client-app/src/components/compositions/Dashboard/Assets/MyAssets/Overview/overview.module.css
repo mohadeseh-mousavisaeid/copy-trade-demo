@@ -1,0 +1,105 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  background-color: #f6f6f6;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.title {
+  font-weight: 500;
+  color: gray;
+  font-size: 1.2rem;
+}
+
+.amountBox {
+  margin-top: 1rem;
+}
+.totalAmount {
+  font-weight: bold;
+  font-size: 3rem;
+  color: black;
+}
+.totalMoney {
+  color: gray;
+}
+
+.btnBox {
+  display: flex;
+  flex-wrap: wrap;
+  margin-block: 1.5rem;
+  gap: 1rem;
+}
+
+.btn {
+  /* margin-inline-end: 1rem !important; */
+  max-width: 100px;
+  width: 100%;
+}
+
+.contentBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.accountDetailBox {
+  flex: 1;
+  padding-bottom: 2rem;
+}
+
+.recentActivity {
+  flex: 1;
+  text-align: center;
+}
+
+.contentTitle {
+  font-weight: 600;
+  color: black;
+  font-size: 1.3rem;
+  margin-block: 2rem;
+}
+
+.imgBox {
+  max-width: 100px;
+  margin-inline: auto;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+.listItem {
+  margin-block: 1rem;
+}
+
+.listItemTitle {
+  font-weight: normal;
+  color: black;
+  font-size: 1.2rem;
+}
+
+.listItemAmount {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.listItemMoney {
+  color: gray;
+}
+
+.almost {
+  margin-inline: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .contentBox {
+    flex-direction: row;
+  }
+
+  .accountDetailBox {
+    padding-bottom: 3rem;
+  }
+}

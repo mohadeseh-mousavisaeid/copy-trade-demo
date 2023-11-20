@@ -1,0 +1,11 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  position: relative;
+}
+
+.innerContainer {
+  display: flex;
+}

@@ -1,0 +1,52 @@
+.container {
+  background-color: #f6f6f6;
+  padding: 2rem;
+}
+
+.innerContainer {
+  max-width: 1000px;
+  margin-inline: auto;
+  background-color: white;
+  padding: 2rem;
+  padding-bottom: 4rem;
+}
+
+.heading {
+  background-color: white;
+  padding-inline: 2rem;
+  padding-block: 3rem;
+  font-size: 2rem;
+}
+
+.title {
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+.infoBox {
+  display: flex;
+  align-items: center;
+  margin-block: 1.5rem;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.label {
+  flex-grow: 1;
+  margin-bottom: 0.5rem;
+}
+
+.desc {
+  color: #ccc;
+  font-size: 0.8rem;
+}
+.value {
+  padding-inline: 2rem;
+}
+.btnBox {
+  width: 70px;
+}

@@ -1,0 +1,40 @@
+.dashboard {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  inset-inline-start: 0;
+  inset-block-start: var(--header-height);
+  border-inline-end: 1px solid #eee;
+  z-index: 100;
+  background-color: white;
+  transition: all 200ms;
+}
+
+.panelContainer {
+  margin-inline-start: var(--dashboard-vertical-width);
+  width: 100%;
+  padding: 0;
+}
+
+.tab {
+  height: 60px;
+  display: flex;
+  justify-content: start !important;
+  align-items: center;
+  padding-inline-start: 2.5rem !important;
+}
+
+.icon {
+  margin-inline-end: 1rem !important;
+  margin-inline-start: 0.5rem !important;
+}
+
+@media screen and (min-width: 576px) {
+  .dashboard {
+    width: var(--dashboard-vertical-width);
+    height: 100vh;
+    inset-inline-start: 0;
+    inset-block-start: var(--header-height);
+    border-inline-end: 1px solid #eee;
+  }
+}
